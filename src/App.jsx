@@ -192,34 +192,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg p-6 shadow-sm">
-          <h2 className="font-bold text-lg mb-3">実装のポイント</h2>
-          <ul className="space-y-2 text-slate-700">
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">1.</span>
-              <span>ユーザーを待機画面（モーダル）に拘束しない</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">2.</span>
-              <span>開始時と完了時にトースト通知で状態を伝える</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">3.</span>
-              <span>完了時にはアクションボタン（ダウンロードなど）を付ける</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">4.</span>
-              <span>エラー時には分かりやすいメッセージと再試行の手段を提供</span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-          <p className="text-sm text-amber-800">
-            <strong>ライブラリ:</strong> 実際のプロジェクトでは、react-hot-toastやshadcn/uiのToast/Sonnerコンポーネントを使うと簡単に実装できます。
-          </p>
-        </div>
-      </div>
+        
 
       {/* トースト表示エリア */}
       {toasts.map(toast => (
