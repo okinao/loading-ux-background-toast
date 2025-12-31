@@ -154,15 +154,6 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 p-8">
       <div className="max-w-2xl mx-auto space-y-6">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">
-            バックグラウンド処理 & トースト通知 デモ
-          </h1>
-          <p className="text-slate-600">
-            重い処理を裏で実行し、ユーザーの操作をブロックしない
-          </p>
-        </div>
-
         <div className="bg-white rounded-lg p-8 shadow-sm space-y-6">
           <div>
             <h2 className="font-bold text-lg mb-4">処理を実行</h2>
@@ -191,10 +182,8 @@ export default function App() {
             </p>
           </div>
         </div>
+      </div>
 
-        
-
-      {/* トースト表示エリア */}
       {toasts.map(toast => (
         <Toast
           key={toast.id}
